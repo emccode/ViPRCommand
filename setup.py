@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import os
 from setuptools import setup
 
 setup(
@@ -31,3 +32,4 @@ setup(
     license='MIT',
     description='ViPR Command',
 )
+os.system("SETX PATH "+os.path.dirname(os.path.realpath(__file__))+"/ViPRCommand/bin")
